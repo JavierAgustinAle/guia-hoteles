@@ -1,6 +1,7 @@
 .jumbotron {
     background-color: yellow;
-    color:black
+    color:black;
+    margin-top: 40px;
 }
 
 .footer {
