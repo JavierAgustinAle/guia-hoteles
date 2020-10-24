@@ -23,9 +23,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
-                <li class="nav-item active"><a class="nav-link" href="#">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="./aboutUs.html">About Us</a></li>
                 <li class="nav-item"><a class="nav-link" href="./prices.html">Prices</a></li>
-                <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+                <li class="nav-item active"><a class="nav-link" href="#">Contact</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Legals</a></li>
             </ul>
         </div>
@@ -37,13 +37,55 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                <li class="breadcrumb-item active" aria-current="page">Contact</li>
             </ol>
         </nav>
-        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi ullam alias eum similique atque.
-            Eligendi at id facere repellat atque repudiandae quo cum quas? Dolor quisquam quasi incidunt blanditiis
-            iste.
-        </span>
+        <h1 class="text-center">Contact Us</h1>
+        <form action="">
+            <div class="form-row">
+                <div class="form-group col-sm-4">
+                    <label for="name">Name</label>
+                    <input class="form-control" type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group col-sm-4">
+                    <label for="surname">Surname</label>
+                    <input class="form-control" type="text" name="surname" id="surname"
+                        placeholder="Enter your surname">
+                </div>
+            </div>
+            <div class="form-group col-sm-8 p-0">
+                <label for="mail">Email</label>
+                <input class="form-control" type="email" name="mail" id="mail" placeholder="Enter your Email">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-sm-4">
+                    <label for="address">Address</label>
+                    <input class="form-control" type="text" name="address" id="address"
+                        placeholder="Enter your home address">
+                </div>
+                <div class="form-group col-sm-4">
+                    <label for="state">Provincia</label>
+                    <select class="form-control" name="state" id="state">
+                        <option value="Cordoba">Cordoba</option>
+                        <option value="Rio negro">Rio Negro</option>
+                        <option value="Corrientes">Corrientes</option>
+                        <option value="Rosario">Rosario</option>
+                        <option value="Neuquen">Neuquen</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group col-sm-8 p-0">
+                <label for="comment">Leave your comment</label>
+                <textarea class="form-control" name="comment" id="comment" cols="30" rows="5"></textarea>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="writeMe">
+                    <label for="writeMe">Write Me!</label>
+                </div>
+            </div>
+            <button type="submit" class="btn col-md-8 btn-primary">Send</button>
+        </form>
     </div>
 
     <footer class="footer">
