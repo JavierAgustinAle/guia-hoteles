@@ -1,5 +1,5 @@
 .jumbotron {
-    background-color: yellow;
+    background: url('https://okdiario.com/img/2020/05/10/plan-de-la-desescalada_--cuando-se-permitira-el-bano-en-la-playa.jpg') no-repeat center center;
     color:black;
     margin-top: 40px;
 }
@@ -12,8 +12,7 @@
 }
 
 .card-hotel {
-    flex: 1 150px;
-    padding: 2px 5px 2px 5px;
+    flex: 1 200px;
     margin-top: 10px;
 }
 
