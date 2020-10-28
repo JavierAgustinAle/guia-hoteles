@@ -72,8 +72,34 @@
                 </p>
             </div>
         </div>
-
-    </div>
+        <hr>
+        <div id="carouselControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" style="height: 400px;"
+                        src="https://www.wishbird.com.mx/blog/wp-content/uploads/2014/12/playas-1-800x400.jpg"
+                        alt="Slice1">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" style="height: 400px;"
+                        src="https://i.pinimg.com/originals/ca/d9/66/cad966d72f18acfcd0497f585fefa0d1.jpg" alt="Slice2">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" style="height: 400px;"
+                        src="https://cdn.vanderbilt.edu/vu-web/clients/mediadisplays/1832-20200505101430-1.png"
+                        alt="Slice3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Prev</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div><br>
     <div class="container">
         <h3 class="text-center">Nuestros Hoteles</h3><br>
         <div class="d-flex flex-wrap">
@@ -251,6 +277,9 @@
         $(function () {
             $("[data-toggle = 'tooltip']").tooltip();
             $("[data-toggle = 'popover']").popover();
+            $(".carousel").carousel({
+                interval: 3000
+            });
         });
     </script>
 </body>
