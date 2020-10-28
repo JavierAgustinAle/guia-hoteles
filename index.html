@@ -87,7 +87,8 @@
                     <p class="card-text">Hotel lujoso y especial para famosos.</p>
                 </div>
                 <div>
-                    <button class="btn btn-sm btn-primary btn-block">Reservar</button>
+                    <button class="btn btn-sm btn-primary btn-block" data-toggle="modal"
+                        data-target="#reserve">Reserve</button>
                 </div>
             </div>
             <div class="card card-hotel d-flex flex-column justify-content-between m-2">
@@ -100,7 +101,8 @@
                     <p class="card-text">El mejor lugar para la familia.</p>
                 </div>
                 <div>
-                    <button class="btn btn-sm btn-primary btn-block">Reservar</button>
+                    <button class="btn btn-sm btn-primary btn-block" data-toggle="modal"
+                        data-target="#reserve">Reserve</button>
                 </div>
             </div>
             <div class="card card-hotel d-flex flex-column justify-content-between m-2">
@@ -113,7 +115,8 @@
                     <p class="card-text">Juega en los mejores casinos</p>
                 </div>
                 <div>
-                    <button class="btn btn-sm btn-primary btn-block">Reservar</button>
+                    <button class="btn btn-sm btn-primary btn-block" data-toggle="modal"
+                        data-target="#reserve">Reserve</button>
                 </div>
             </div>
             <div class="card card-hotel d-flex flex-column justify-content-between m-2">
@@ -126,7 +129,8 @@
                     <p class="card-text">El hotel mas spicy</p>
                 </div>
                 <div>
-                    <button class="btn btn-sm btn-primary btn-block">Reservar</button>
+                    <button class="btn btn-sm btn-primary btn-block" data-toggle="modal"
+                        data-target="#reserve">Reserve</button>
                 </div>
             </div>
             <div class="card card-hotel d-flex flex-column justify-content-between m-2">
@@ -137,9 +141,78 @@
                     <h5 class="card-title">Hotel Colombia</h5>
                     <h6 class="card-subtitle text-muted">Bogota.</h6>
                     <p class="card-text">El hotel mas blanco.</p>
+                    <button class="btn btn-outline-info btn-sm" data-toggle="modal" data-target="#contacto">Contact
+                        hotel</button>
                 </div>
                 <div>
-                    <button class="btn btn-sm btn-primary btn-block">Reservar</button>
+                    <button class="btn btn-sm btn-primary btn-block" data-toggle="modal"
+                        data-target="#reserve">Reserve</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="modalContacto"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalContacto">Contact this hotel</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="email" class="col-form-label">Email: </label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="col-form-label">Message: </label>
+                            <textarea class="form-control" name="message" id="message" cols="20" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success btn-sm">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="reserve" tabindex="-1" role="dialog" aria-labelledby="modalReserve" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalReserve">Reserve your room</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="date" class="col-form-label">Check-in Date: </label>
+                            <input type="date" class="form-control" id="date">
+                        </div>
+                        <div class="form-group">
+                            <label for="dateOut" class="col-form-label">Check-out Date: </label>
+                            <input type="date" class="form-control" id="dateOut">
+                        </div>
+                        <div class="form-group">
+                            <label for="room" class="col-form-label">Guests: </label>
+                            <select class="form-control" name="room" id="room">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success btn-sm">Send</button>
                 </div>
             </div>
         </div>
