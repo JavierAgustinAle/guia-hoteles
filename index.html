@@ -82,7 +82,8 @@
                     src="https://thumbnails.trvl-media.com/Gg5aCoZN-F3mbCrFAMWYaKY6ycs=/500x333/smart/filters:quality(80)/images.trvl-media.com/hotels/3000000/2180000/2179400/2179375/06c5ba21_z.jpg"
                     alt="SheratonCba">
                 <div class="card-body">
-                    <h5 class="card-title">Sheraton</h5>
+                    <h5 class="card-title" data-toggle="tooltip" data-placement="top"
+                        title="First 5 reserves get a discount!">Sheraton</h5>
                     <h6 class="card-subtitle text-muted">Cordoba.</h6>
                     <p class="card-text">Hotel lujoso y especial para famosos.</p>
                 </div>
@@ -96,7 +97,8 @@
                     src="https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/itemimages/56/47/5647680_v6.jpeg"
                     alt="SheratonCba">
                 <div class="card-body">
-                    <h5 class="card-title">Holiday Inn</h5>
+                    <h5 class="card-title" data-toggle="tooltip" data-placement="left" title="Breakfast included">
+                        Holiday Inn</h5>
                     <h6 class="card-subtitle text-muted">Neuquen.</h6>
                     <p class="card-text">El mejor lugar para la familia.</p>
                 </div>
@@ -115,8 +117,8 @@
                     <p class="card-text">Juega en los mejores casinos</p>
                 </div>
                 <div>
-                    <button class="btn btn-sm btn-primary btn-block" data-toggle="modal"
-                        data-target="#reserve">Reserve</button>
+                    <button class="btn btn-sm btn-primary btn-block" data-toggle="popover" title="Sorry!"
+                        data-content="The hotel is close due to Corona Virus.">Reserve</button>
                 </div>
             </div>
             <div class="card card-hotel d-flex flex-column justify-content-between m-2">
@@ -245,7 +247,12 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
+    <script>
+        $(function () {
+            $("[data-toggle = 'tooltip']").tooltip();
+            $("[data-toggle = 'popover']").popover();
+        });
+    </script>
 </body>
 
 </html>
