@@ -1,0 +1,23 @@
+$green: #94fff5;
+
+@mixin margins($top , $bottom ) {
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
+.jumbotron {
+    background: url('https://okdiario.com/img/2020/05/10/plan-de-la-desescalada_--cuando-se-permitira-el-bano-en-la-playa.jpg') no-repeat center center;
+    color:black;
+    @include margins(40px, 15px );
+}
+
+.footer {
+    padding: 10px 10px 0 10px;
+    background-color: $green;
+    @include margins(10px, 0px );
+}
+
+.card-hotel {
+    flex: 1 200px;
+    @include margins(10px, 0px );
+}
