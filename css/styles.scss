@@ -7,7 +7,7 @@ $green: #94fff5;
 
 .jumbotron {
     background: url('https://okdiario.com/img/2020/05/10/plan-de-la-desescalada_--cuando-se-permitira-el-bano-en-la-playa.jpg') no-repeat center center;
-    color:black;
+    color:$green;
     @include margins(40px, 15px );
 }
 
